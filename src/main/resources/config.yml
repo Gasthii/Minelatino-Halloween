@@ -1,0 +1,172 @@
+config-version: 1
+
+Messages:
+  Reloaded: "&cReloaded config!"
+  Give:
+    Usage: "&cUsage: /mlhg <player> <candy/pumpkin> <amount>"
+    Candies: "&cGiven %amount% candies for %player%"
+    Pumpkins: "&cGiven %amount% pumpkin for %player%"
+  No-Permission: "&cYou don't have permission!"
+  On-Kill-Player:
+    Enabled: true
+    Message: "&aKilled %player%"
+  On-Death-By-Player:
+    Enabled: true
+    Message: "&c%player% killed you"
+  Consumed:
+    Pumpkin:
+      Enabled: true
+      Message: "&eConsumed pumpkin!"
+    Candy:
+      Enabled: true
+      Message: "&eConsumed candy!"
+
+Pumpkin:
+  Enabled: true
+  Skull-Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzcyNjhiMzdjOWJhZDUyMTVhNjljYzlmYmZhZDc2ZDAyZWVkMTg2YzQ3MWI5ZmY3ZTMxMGQ4MWI1NTRhMTk0ZCJ9fX0="
+  Skull-UUID: "b55fc305-e3c2-43f1-b279-9c21fde36fad"
+  Display-Name: "&6Pumpkin"
+  Lore:
+    - "&7Boooo!!"
+  Potion-Effect:
+    Enabled: true
+    List-Potions:
+      - SPEED
+      - SPEED
+      - SPEED
+      - SPEED
+      - JUMP
+      - JUMP
+      - JUMP
+      - JUMP
+      - JUMP
+      - INVISIBILITY
+    #https://mapmaking.fr/tick/
+    List-Durations:
+      - 500
+      - 500
+      - 500
+      - 500
+      - 500
+      - 500
+      - 500
+      - 500
+      - 500
+      - 500
+    #starts from 0
+    List-Amplifiers:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 0
+
+Candy:
+  Enabled: true
+  Skull-Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODcyNWQxMWZlMWQ3YmUxNjdlYzVjYzc2OTdjZGZjMjU1NzM3NzRlZTQxYjhjM2IzNzI2MWU0M2Q1ZDMxOGZjMyJ9fX0="
+  Skull-UUID: "55055ab4-c133-454f-8ccf-63f19d20e1c6"
+  Display-Name: "&cCandy"
+  Lore:
+    - "&7Its taste!"
+  Potion-Effect:
+    Enabled: true
+    #https://helpch.at/docs/1.8/index.html?org/bukkit/PotionEffectType.html
+    List-Potions:
+      - SPEED
+      - SPEED
+      - SPEED
+      - SPEED
+      - JUMP
+      - JUMP
+      - JUMP
+      - JUMP
+      - JUMP
+      - INVISIBILITY
+    #https://mapmaking.fr/tick/
+    List-Durations:
+      - 500
+      - 500
+      - 500
+      - 500
+      - 500
+      - 500
+      - 500
+      - 500
+      - 500
+      - 500
+    #starts from 0
+    List-Amplifiers:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 0
+
+#https://helpch.at/docs/1.8/org/bukkit/Sound.html
+Sounds:
+  Pumpkin:
+    Enabled: true
+    List:
+      - ZOMBIE_INFECT
+  Candy:
+    Enabled: true
+    List:
+      - EAT
+
+Commands:
+  Pumpkin:
+    As-Console:
+      Enabled: true
+      List:
+        - "give %player% pumpkin 1"
+    As-Player:
+      Enabled: true
+      List:
+        - "give %player% pumpkin 1"
+  Candy:
+    As-Console:
+      Enabled: true
+      List:
+        - "give %player% sugar 1"
+    As-Player:
+      Enabled: true
+      List:
+        - "give %player% sugar 1"
+  On-Kill-Player:
+    As-Console:
+      Enabled: true
+      List:
+        - "give %player% diamond 1"
+    As-Player:
+      Enabled: true
+      List:
+        - "give %player% diamond 1"
+  On-Death-By-Player:
+    As-Console:
+      Enabled: true
+      List:
+        - "give %player% redstone 1"
+    As-Player:
+      Enabled: true
+      List:
+        - "give %player% redstone 1"
+
+Random-Skull-On-Kill:
+  Enabled: true
+  Messages:
+    Pumpkin:
+      Enabled: true
+      Message: "&aReceived pumpkin for killing %player%"
+    Candy:
+      Enabled: true
+      Message: "&aReceived candy for killing %player%"

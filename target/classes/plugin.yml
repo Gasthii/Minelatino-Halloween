@@ -1,0 +1,9 @@
+name: minelatino-halloween
+version: 1.0
+authors: [Minelatino]
+main: com.gasthiiml.halloween.Halloween
+commands:
+  mlhr:
+    description: reload cmd
+  mlhg:
+    description: give skulls
